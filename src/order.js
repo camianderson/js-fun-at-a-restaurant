@@ -20,7 +20,7 @@ for (var i = 0; i < deliveryOrders.length; i++){
 function listItems (orders){
   var items = [];
   for (var i = 0; i < orders.length; i++) {
-    items.push(orders[i].item)
+    items.push(orders[i].item);
   }
   items = items.join(", ");
   return items;
@@ -28,11 +28,11 @@ function listItems (orders){
 
 function searchOrder(orders, item) {
   // Converts all item key value into a single array using the map function
-  items = orders.map(value => value.item)
+  items = orders.map(value => value.item);
   // Returns true or false if the item in question exists in the items list
-  return items.includes(item)
+  return items.includes(item);
   //includes is a function that searches an array for a specific item.
-}
+};
 
 module.exports = {
    takeOrder,
