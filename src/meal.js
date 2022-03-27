@@ -10,13 +10,13 @@ function createMenuItem(itemName, itemPrice, itemType){
         name: itemName,
         price: itemPrice,
         type: itemType
-  };
+  }
   return menuItem;
 }
 
 
 function addIngredients(ingredient, ingredients){
-  if (ingredients.includes(ingredient)){ //ingredients.includes is comparing ingredient(the parameter?) to each value of the array
+  if (ingredients.includes(ingredient)){ //ingredients.includes is comparing ingredient(the parameter) to each value of the array
     return ingredients;
   } else {
     ingredients.push(ingredient);
@@ -31,7 +31,7 @@ function formatPrice(initialPrice){
 
 
 function decreasePrice (parameter){
-  less10percent = parameter * .9
+  less10percent = parameter * .9;
   return less10percent;
 }
 
@@ -41,7 +41,7 @@ function createRecipe (title, ingredients, menuItemType){
     title: title,
     ingredients: ingredients,
     type: menuItemType
-  };
+  }
   return addRecipe;
 
 }
