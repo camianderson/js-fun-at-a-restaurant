@@ -6,14 +6,14 @@ function takeOrder (deliveryOrder, deliveryOrders){
   deliveryOrders.push(deliveryOrder);
     return deliveryOrders;
   }
-};
+}
 
 function refundOrder (deliveryOrderNumber, deliveryOrders){
 for (var i = 0; i < deliveryOrders.length; i++){
     if(deliveryOrders[i].orderNumber === deliveryOrderNumber) {
-      deliveryOrders.splice(i,1)
+      deliveryOrders.splice(i,1);
     }
-  };
+  }
   return deliveryOrders;
 }
 
@@ -24,7 +24,7 @@ function listItems (orders){
   }
   items = items.join(", ");
   return items;
-};
+}
 
 function searchOrder(orders, item) {
   // Converts all item key value into a single array using the map function
@@ -32,7 +32,7 @@ function searchOrder(orders, item) {
   // Returns true or false if the item in question exists in the items list
   return items.includes(item);
   //includes is a function that searches an array for a specific item.
-};
+}
 
 module.exports = {
    takeOrder,
